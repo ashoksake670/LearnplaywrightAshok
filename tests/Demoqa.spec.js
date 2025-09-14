@@ -11,7 +11,7 @@ await expect(page).toHaveURL ('https://demoqa.com/text-box')
 await page.locator("#userName").fill ("Ashok S")
 await page.locator("#userEmail").fill ("sakeashok670@gmail.com")
 await page.locator("#currentAddress").fill ("123 Main Street, City, State")
-await page.locator("#permanentAddress").filSl ("456 Oak Avenue, Town, Country")
+await page.locator("#permanentAddress").fill ("456 Oak Avenue, Town, Country")
 await page.locator("#submit"). click()
 
 

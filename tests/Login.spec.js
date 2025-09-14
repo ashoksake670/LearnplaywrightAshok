@@ -54,13 +54,13 @@ await page.locator('//input[@type="password"]').fill ('admin123')
 await page.locator('//button[@type="submit"]').click ()
 
 await expect(page.locator("//h6[text()='Dashboard']")).toBeVisible()
+await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/pim/viewPimModule')
 
-await page.locator('https://opensource-demo.orangehrmlive.com/web/index.php/pim/viewPimModule')
 await page.locator("//a[text()='Add Employee']").click();
 await page.locator('//input[@name="firstName"]').fill ('john')
 await page.locator('//input[@name="middleName"]').fill ('max')
 await page.locator('//input[@name="lastName"]').fill ('Lewis')
-await page.locator('//button[@type="submit"]').click ()
+await page.locator("//button[@type='submit']").click ()
 
 await expect(page.locator("//h6[text()='Personal Details']")).toBeVisible()
 
