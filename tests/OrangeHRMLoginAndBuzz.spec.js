@@ -6,7 +6,7 @@ test('Login and post in Buzz on OrangeHRM', async ({ page }) => {
 
   // Enter username and password
   await page.fill('input[name="username"]', 'Admin');
-  await page.fill('input[name="password"]', 'Admin123');
+  await page.fill('input[name="password"]', 'admin123');
 
   // Click login button
   await page.click('button[type="submit"]');
